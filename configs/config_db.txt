@@ -1,0 +1,7 @@
+Driver={SQL Server}
+Server=DOANH-PC\SQLEXPRESS
+Database=ML_Training
+Trusted_Connection=yes
+DATA_Table_name=DuLieu
+Input_Table_name=Input
+Output_Tabe_name=Prediction
