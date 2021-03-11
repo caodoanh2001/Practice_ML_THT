@@ -9,7 +9,8 @@ Tình trạng hiện tại:
 - [x] Xuất output ra SQL (1 dòng)
 - [x] Một số thuật toán học máy
 - [ ] Neural network
-- [ ] Lưu mô hình ra file .pkl
+- [x] Huấn luyện/ sử dụng mô hình
+- [ ] Lưu mô hình ra file .pkl (để tái sử dụng)
 
 ## 1. Cách nhập/xuất dữ liệu từ SQL
 
