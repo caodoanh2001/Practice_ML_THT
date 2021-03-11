@@ -1,5 +1,7 @@
 # Practice_ML_THT
 
+Dạ lúc mình trao đổi mình sẽ clone code này về, tạo một môi trường ảo trên anaconda và sử dụng code trên đó ạ, khi trao đổi con sẽ nói rõ hơn
+
 Source code thực hành ML
 Tình trạng hiện tại:
 
