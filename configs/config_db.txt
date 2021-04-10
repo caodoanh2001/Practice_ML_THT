@@ -1,5 +1,5 @@
 Driver={SQL Server}
-Server=DOANH-PC\SQLEXPRESS
+Server=DESKTOP-UHQMJHR\SQLEXPRESS
 Database=ML_Training
 Trusted_Connection=yes
 DATA_Table_name=DuLieu

@@ -72,15 +72,15 @@ def save_model(model, model_name):
     except:
         print('Sth wrong')
 
-def load_model(model_name):
-    '''
-    Load model
-    Input: .pkl file path
-    Output: trained model.
-    '''
-    with open(model_name, 'rb') as file:  
-        Pickled_Model = pickle.load(file)
-    return Pickled_Model
+# def load_model(model_name):
+#     '''
+#     Load model
+#     Input: .pkl file path
+#     Output: trained model.
+#     '''
+#     with open(model_name, 'rb') as file:  
+#         Pickled_Model = pickle.load(file)
+#     return Pickled_Model
     
 def read_data_from_SQL():
     '''
@@ -139,5 +139,8 @@ def save_output_to_SQL(output):
 
     output = tuple([i for i in output])
     # print('INSERT INTO {}.{} VALUES {}'.format(cfg_database, cfg_output_table_name, str(output)))
+
+    # print('DELETE FROM {}.dbo.{}'.format(cfg_database, cfg_output_table_name))
+    cursor.execute('DELETE FROM {}.dbo.{}'.format(cfg_database, cfg_output_table_name))
     cursor.execute('INSERT INTO {}.dbo.{} VALUES {}'.format(cfg_database, cfg_output_table_name, str(output)))
     cursor.commit()
